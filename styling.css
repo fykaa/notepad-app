@@ -10,6 +10,23 @@
   font-style: normal;
 }
 
+.bold:before {
+  content: 'B';
+  font-style: normal;
+}
+
+.italic:before {
+  content: 'i';
+  font-style: normal;
+}
+
+.copy:before {
+  content: 'C';
+  font-style: normal;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {

@@ -19,12 +19,20 @@ addBox.addEventListener("click", () => {
     if (window.innerWidth > 660) titleTag.focus();
 });
 
+// To close note
 closeIcon.addEventListener("click", () => {
     isUpdate = false;
     titleTag.value = descTag.value = "";
     popupBox.classList.remove("show");
     document.querySelector("body").style.overflow = "auto";
 });
+
+// To make bold text
+
+
+// To Copy the entire text
+
+// To 
 
 function showNotes() {
     if (!notes) return;
@@ -50,6 +58,11 @@ function showNotes() {
         addBox.insertAdjacentHTML("afterend", liTag);
     });
 }
+
+
+
+
+
 showNotes();
 
 function showMenu(elem) {
@@ -103,3 +116,5 @@ addBtn.addEventListener("click", e => {
         closeIcon.click();
     }
 });
+
+
