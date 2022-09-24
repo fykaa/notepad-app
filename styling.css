@@ -1,4 +1,15 @@
-/* Import Google Font - Poppins */
+.setting:before {
+  content: '...';
+  font-size: larger;
+  font-style: normal;
+  color: white;
+}
+
+.cross:before {
+  content: 'X';
+  font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {

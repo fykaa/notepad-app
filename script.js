@@ -39,7 +39,7 @@ function showNotes() {
                         <div class="bottom-content">
                             <span>${note.date}</span>
                             <div class="settings">
-                                <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
+                                <i onclick="showMenu(this)" class="uil setting"></i>
                                 <ul class="menu">
                                     <li onclick="updateNote(${id}, '${note.title}', '${filterDesc}')"><i class="uil uil-pen"></i>Edit</li>
                                     <li onclick="deleteNote(${id})"><i class="uil uil-trash"></i>Delete</li>
@@ -76,8 +76,8 @@ function updateNote(noteId, title, filterDesc) {
     addBox.click();
     titleTag.value = title;
     descTag.value = description;
-    popupTitle.innerText = "Update a Note";
-    addBtn.innerText = "Update Note";
+    popupTitle.innerText = "Update your Note";
+    addBtn.innerText = "Update!";
 }
 
 addBtn.addEventListener("click", e => {
