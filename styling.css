@@ -9,11 +9,11 @@
 }
 
 body {
-  background: #18181b;
+  background: #001220;
 }
 
 ::selection {
-  color: #5050b1;
+  color: #fff;
   background: #618cf8;
 }
 
@@ -29,7 +29,7 @@ body {
   list-style: none;
   border-radius: 5px;
   padding: 15px 20px 20px;
-  background: #fff;
+  background: #5050b1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -53,17 +53,22 @@ header,
 .add-box .icon {
   height: 78px;
   width: 78px;
-  color: #88ABFF;
+  color: #7e7efb;
   font-size: 40px;
   border-radius: 50%;
   justify-content: center;
-  border: 2px dashed #88ABFF;
+  border: 2px dashed #7e7efb;
 }
 
 .add-box p {
-  color: #88ABFF;
-  font-weight: 500;
+  color: white;
+  font-size: large;
+  font-weight: 1000;
   margin-top: 20px;
+}
+
+.add-box p:hover {
+  font-size: larger;
 }
 
 .note {
@@ -100,13 +105,14 @@ header,
 }
 
 .note p {
+  color: white;
   font-size: 22px;
   font-weight: 500;
 }
 
 .note span {
   display: block;
-  color: #575757;
+  color: wheat;
   font-size: 16px;
   margin-top: 5px;
 }
@@ -117,7 +123,7 @@ header,
 }
 
 .bottom-content span {
-  color: #6D6D6D;
+  color: #96969e;
   font-size: 14px;
 }
 
@@ -212,7 +218,7 @@ header,
 
 .popup .content {
   border-radius: 5px;
-  background: #fff;
+  background: #141d25;
   width: calc(100% - 15px);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -223,6 +229,7 @@ header,
 }
 
 .content header p {
+  color: white;
   font-size: 20px;
   font-weight: 500;
 }
@@ -242,6 +249,7 @@ header,
 }
 
 form .row label {
+  color: white;
   font-size: 18px;
   display: block;
   margin-bottom: 6px;
@@ -270,13 +278,17 @@ form .row textarea {
 form button {
   width: 100%;
   height: 50px;
-  color: #fff;
+  color: white;
   outline: none;
   border: none;
   cursor: pointer;
   font-size: 17px;
   border-radius: 4px;
-  background: #6A93F8;
+  background: #4f46e5;
+}
+
+form button:hover {
+  background: #16a34a;
 }
 
 @media (max-width: 660px) {
