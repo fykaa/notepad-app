@@ -1,39 +1,37 @@
 .setting:before {
-  content: '...';
+  content: "...";
   font-size: larger;
   font-style: normal;
   color: white;
 }
 
 .cross:before {
-  content: 'X';
+  content: "X";
   font-style: normal;
 }
 
 .bold:before {
-  content: 'B';
+  content: "B";
   font-style: normal;
 }
 
 .italic:before {
-  content: 'i';
+  content: "i";
   font-style: normal;
 }
 
 .copy:before {
-  content: 'C';
+  content: "C";
   font-style: normal;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -160,7 +158,7 @@ header,
 }
 
 .bottom-content .settings i {
-  color: #6D6D6D;
+  color: #6d6d6d;
   cursor: pointer;
   font-size: 15px;
 }
