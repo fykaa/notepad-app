@@ -2,17 +2,24 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Notepad App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styling.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <h1
-    style="padding: 4px 4px; margin: 20px 10px; color: white; background-color: #16a34a; border-radius: 10px; text-align: center;">
-    Devsnest Hackathon 1.0 -
-    NotePad App
+  <h1 style="
+        padding: 4px 4px;
+        margin: 20px 10px;
+        color: white;
+        /* display: inline-block; */
+
+        background-color: #3434a5;
+        border-radius: 10px;
+        text-align: center;
+      ">
+    Devsnest Hackathon 1.0 - NotePad App
   </h1>
   <div class="popup-box">
     <div class="popup">
@@ -27,7 +34,7 @@
         <form action="#">
           <div class="row title">
             <label>Title</label>
-            <input type="text" spellcheck="false">
+            <input type="text" spellcheck="false" />
           </div>
           <div class="row description">
             <label>Description</label>
@@ -45,8 +52,28 @@
     </li>
   </div>
 
-  <script src="script.js"></script>
+  <div class='editor'>
+    <p>
+      Hey Devsnest Community! <code>Welcome</code> Select Text here and click on the required format.
+    </p>
+  </div>
 
+  <div class='options'>
+    <h3 style="padding: 15px; text-align: center;">Text Editor Section</h3>
+    <button onmousedown="event.preventDefault();" onclick="command('bold');">B</button>
+    <button onmousedown="event.preventDefault();" onclick="command('italic');">i</button>
+    <button onmousedown="event.preventDefault();" onclick="command('underline');">U</button>
+    <!-- <button onmousedown="event.preventDefault();" onclick="command('superscript');">Superscript</button> -->
+    <!-- <button onmousedown="event.preventDefault();" onclick="command('cut');">cut</button> -->
+    <button onmousedown="event.preventDefault();" onclick="command('copy');">Copy</button>
+    <!-- <button onmousedown="event.preventDefault();" onclick="command('increaseFontSize');">Font Size Up</button>
+      <button onmousedown="event.preventDefault();" onclick="command('decreaseFontSize');">Font Size Down</button> -->
+  </div>
+
+
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>

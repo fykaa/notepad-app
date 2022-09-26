@@ -1,39 +1,109 @@
 .setting:before {
-  content: '...';
+  content: "...";
   font-size: larger;
   font-style: normal;
   color: white;
 }
 
+
+.options {
+  margin: 15px;
+  border-radius: 16px;
+  background: #4f46e5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 500px;
+  text-align: center;
+}
+
+b {
+  font-weight: bold;
+}
+
+.editor {
+  outline: none;
+}
+
+big {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+small {
+  font-size: 14px;
+}
+
+code {
+  background: rgb(47, 41, 41);
+  margin-left: 5px;
+  padding: 5px;
+  font-family: 'Inconsolata', monospace;
+}
+
+p,
+pre {
+  padding: 20px;
+  color: white;
+  display: inline-block;
+}
+
+.options {
+  border: 1px solid #ddd;
+  padding: 0 20px 20px;
+}
+
+button {
+  color: #fff;
+  min-width: 88px;
+  padding: 10px 14px;
+  outline: 0;
+  outline-offset: 0;
+  border: 0;
+  border-radius: 22px;
+  transition: all 0.15s ease-in-out;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #16a34a;
+  border-color: #ccc;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+
+  /* &:hover{
+    color: #141414;
+    background-color: #e5e5e5;
+  } */
+}
+
 .cross:before {
-  content: 'X';
+  content: "X";
   font-style: normal;
 }
 
 .bold:before {
-  content: 'B';
+  content: "B";
   font-style: normal;
 }
 
 .italic:before {
-  content: 'i';
+  content: "i";
   font-style: normal;
 }
 
 .copy:before {
-  content: 'C';
+  content: "C";
   font-style: normal;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -160,7 +230,7 @@ header,
 }
 
 .bottom-content .settings i {
-  color: #6D6D6D;
+  color: #6d6d6d;
   cursor: pointer;
   font-size: 15px;
 }
