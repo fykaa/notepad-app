@@ -4,6 +4,7 @@ const addBox = document.querySelector(".add-box"),
   popupBox = document.querySelector(".popup-box"),
   popupTitle = popupBox.querySelector("header p"),
   closeIcon = popupBox.querySelector("header i"),
+  // boldIcon = popupBox.querySelector("textarea"),
   titleTag = popupBox.querySelector("input"),
   descTag = popupBox.querySelector("textarea"),
   addBtn = popupBox.querySelector("button");
@@ -126,3 +127,31 @@ addBtn.addEventListener("click", (e) => {
     closeIcon.click();
   }
 });
+
+// xxxxxxxxxxxxxxxxxxxxx
+
+
+
+const editor = document.querySelector('.editor');
+editor.contentEditable = true;
+editor.focus();
+
+function command(name) {
+  let success;
+
+  try {
+    success = document.execCommand(name, false, null);
+  } catch (error) {
+    alert(error);
+  }
+
+  if (!success) {
+    const supported = isSupported(name);
+    const message = supported ? 'Error: Select inside the Editor' : 'Command is not supported by your browser.';
+    alert(message);
+  }
+}
+
+function isSupported(name) {
+  return document.queryCommandSupported(name);
+}
